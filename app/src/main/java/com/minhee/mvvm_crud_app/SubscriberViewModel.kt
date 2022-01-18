@@ -8,6 +8,11 @@ import com.minhee.mvvm_crud_app.db.Subscriber
 import com.minhee.mvvm_crud_app.db.SubscriberRepository
 import kotlinx.coroutines.launch
 
+/**
+ repository를 통해 model과 소통 ==> repository 클래스의 인스턴스를 생성자 매개변수로 추가
+ ViewModel 및 LiveData를 이용한 양방향 데이터 바인 => ViewModel의 값에서 xml레이아웃 속성 값을 자동으로 업데이트
+
+ **/
 
 class SubscriberViewModel(private val repository: SubscriberRepository) : ViewModel() {
 
